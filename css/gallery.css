@@ -7,7 +7,7 @@
 .gallery__img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 1rem;
+  border-radius: 1.25rem;
 }
 
 /* sm */

@@ -15,8 +15,32 @@
   scroll-snap-align: start;
 }
 
+.menu-item[data-featured]::before {
+  content: attr(data-featured);
+  display: block;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1;
+  pointer-events: none; /* keep click area of image intact */
+
+  padding: 0.5rem 0.75rem;
+
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.875rem;
+  line-height: 150%;
+
+  border-radius: 100rem;
+  color: var(--white);
+  background: var(--primary-600);
+
+  color: var(--primary-600);
+  background: var(--primary-300);
+}
+
 .menu-item__image {
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
 }
 
 .menu-item__title {
