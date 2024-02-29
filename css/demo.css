@@ -1,0 +1,26 @@
+body {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn-col {
+  display: grid;
+  gap: 0.5rem;
+  justify-items: start;
+}
+
+.btn-col h3 {
+  color: #aaa;
+}
