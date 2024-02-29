@@ -11,35 +11,44 @@ html {
   font: 400 16px/1.5rem "Poppins", sans-serif;
 }
 
-body {
-  padding: 2rem;
-}
-
 h1 {
   margin-bottom: 0.5rem;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.25em;
-  letter-spacing: 0.025em;
 }
 
 h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.25em;
-  letter-spacing: 0.025em;
 }
 
 h3 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.25em;
-  letter-spacing: 0.025em;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 button {
   font: inherit;
   border: none;
   background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
 }

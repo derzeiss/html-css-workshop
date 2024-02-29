@@ -1,5 +1,19 @@
-@import "./css/font-awesome.css";
+/* imports & resets */
+@import "./css/font-awesome-all.css";
 @import "./css/fonts.css";
 @import "./css/reset.css";
+@import "./css/layout.css";
+
+/* components */
 @import "./css/button.css";
-@import "./css/demo.css";
+@import "./css/chip.css";
+@import "./css/decoration.css";
+@import "./css/featured-dish.css";
+@import "./css/form-elements.css";
+@import "./css/hero.css";
+@import "./css/gallery.css";
+@import "./css/page-footer.css";
+@import "./css/page-header.css";
+
+/* pages */
+@import "./css/button-demo.css";

@@ -1,0 +1,38 @@
+.featured-dish-container {
+  display: flex;
+  gap: 2rem;
+
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.featured-dish {
+  flex: 0 0 22.5rem;
+}
+
+.featured-dish__image {
+  border-radius: 1.25rem;
+}
+
+.featured-dish__title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.featured-dish__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+
+  margin: 1.25rem 0;
+
+  font-size: 1.25rem;
+}
+
+.featured-dish__price small {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #747474;
+}

@@ -1,0 +1,16 @@
+.hero {
+  padding: 8rem 0;
+  color: white;
+  background: tomato;
+}
+
+.hero__subline {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.025em;
+}
+
+.hero__btn {
+  margin-top: 2rem;
+}

@@ -1,0 +1,39 @@
+.with-decoration-letters:before {
+  content: "家人";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2rem;
+
+  height: 18rem;
+  margin: auto;
+  user-select: none;
+  white-space: nowrap;
+
+  font-weight: 600;
+  font-size: 18rem;
+  line-height: 100%;
+  opacity: 0.25;
+}
+
+.decoration-image {
+  position: absolute;
+  right: 10rem;
+  top: 50%;
+  transform: translateY(-25%);
+
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.25rem;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  .decoration-image {
+    opacity: 1;
+    visibility: visible;
+  }
+}

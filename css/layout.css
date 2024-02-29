@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(16px, 5vw, 64px);
+  padding-right: clamp(16px, 5vw, 64px);
+}
+
+.section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.section--first {
+  margin-top: 2rem;
+}

@@ -1,10 +1,10 @@
-body {
+body.button-demo {
   width: 90%;
   max-width: 800px;
-  margin: auto;
+  margin: 4rem auto;
 }
 
-section {
+.button-demo section {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }

@@ -1,7 +1,19 @@
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
 .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  width: fit-content;
   padding: 0.75rem 1.5rem;
   user-select: none;
   cursor: pointer;
+  white-space: nowrap;
 
   font-weight: 600;
   font-size: 0.75rem;
@@ -54,7 +66,6 @@
 .btn--tertiary {
   color: hsl(9, 100%, 64%);
   background: white;
-  border: 2px solid hsl(9, 100%, 64%);
 }
 
 .btn--tertiary:active {

@@ -1,0 +1,20 @@
+.page-footer {
+  padding: 2rem 0;
+  color: white;
+  background: #222;
+
+  font-size: 0.875rem;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1rem;
+
+  font-size: 0.75rem;
+}
