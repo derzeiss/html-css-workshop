@@ -21,7 +21,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  background: #f0f0f0;
+  background: var(--neutral-100);
 
   transition-property: background-color, transform;
   transition-duration: 0.1s;
@@ -46,37 +46,37 @@
 }
 
 .btn--primary {
-  color: white;
-  background: hsl(9, 100%, 64%);
+  color: var(--white);
+  background: var(--primary-600);
 }
 
 .btn--primary:active {
-  background: hsl(7, 76%, 42%);
+  background: var(--primary-700);
 }
 
 .btn--secondary {
-  color: hsl(9, 100%, 64%);
-  background: hsl(11, 100%, 94%);
+  color: var(--primary-600);
+  background: var(--primary-300);
 }
 
 .btn--secondary:active {
-  background: hsl(11, 100%, 85%);
+  background: var(--primary-400);
 }
 
 .btn--tertiary {
-  color: hsl(9, 100%, 64%);
-  background: white;
+  color: var(--primary-600);
+  background: none;
 }
 
 .btn--tertiary:active {
-  background: hsl(11, 100%, 94%);
+  background: var(--primary-300);
 }
 
 /* -- BRUTALIST -- */
 .btn--brutalist {
   border-radius: 0;
-  color: #fff;
-  background: #222;
+  color: var(--white);
+  background: var(--neutral-900);
 }
 
 .btn--brutalist::before {
@@ -151,7 +151,7 @@
 }
 
 .btn--elegant:hover {
-  color: #fff;
+  color: var(--white);
   background-size: 100% 100%;
 }
 

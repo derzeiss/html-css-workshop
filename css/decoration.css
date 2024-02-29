@@ -31,6 +31,7 @@
   visibility: hidden;
 }
 
+/* lg */
 @media (min-width: 1024px) {
   .decoration-image {
     opacity: 1;

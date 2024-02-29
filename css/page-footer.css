@@ -1,13 +1,14 @@
 .page-footer {
   padding: 2rem 0;
-  color: white;
-  background: #222;
+  color: var(--white);
+  background: var(--neutral-900);
 
   font-size: 0.875rem;
 }
 
-.page-footer .container {
+.page-footer__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -17,4 +18,11 @@
   gap: 1rem;
 
   font-size: 0.75rem;
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .page-footer__container {
+    flex-direction: row;
+  }
 }

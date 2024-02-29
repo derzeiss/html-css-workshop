@@ -8,18 +8,18 @@
 }
 
 html {
+  color: var(--neutral-900);
+  background: var(--white);
   font: 400 16px/1.5rem "Poppins", sans-serif;
 }
 
 h1 {
-  margin-bottom: 0.5rem;
   font-weight: 600;
   font-size: 3rem;
   line-height: 1.25em;
 }
 
 h2 {
-  margin-bottom: 1.5rem;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.25em;

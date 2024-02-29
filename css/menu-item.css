@@ -1,27 +1,31 @@
-.featured-dish-container {
+.menu-item-container {
   display: flex;
   gap: 2rem;
 
   width: 100%;
   overflow-x: auto;
   padding-bottom: 1rem;
+
+  scroll-snap-type: x mandatory;
 }
 
-.featured-dish {
-  flex: 0 0 22.5rem;
+.menu-item {
+  flex: 0 0 20.5rem;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
 }
 
-.featured-dish__image {
+.menu-item__image {
   border-radius: 1.25rem;
 }
 
-.featured-dish__title {
+.menu-item__title {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
 
-.featured-dish__price {
+.menu-item__price {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
@@ -31,8 +35,8 @@
   font-size: 1.25rem;
 }
 
-.featured-dish__price small {
+.menu-item__price small {
   display: inline-block;
   font-size: 0.75rem;
-  color: #747474;
+  color: var(--neutral-500);
 }
