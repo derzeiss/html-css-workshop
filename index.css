@@ -18,6 +18,7 @@
 @import "./css/menu-item.css";
 @import "./css/page-footer.css";
 @import "./css/page-header.css";
+@import "./css/theme-switcher.css";
 
 /* pages */
 @import "./css/button-demo.css";
