@@ -14,4 +14,5 @@
 
 .hero__btn {
   margin-top: 2rem;
+  background: var(--white);
 }
