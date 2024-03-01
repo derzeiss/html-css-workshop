@@ -13,11 +13,6 @@
 
 /* dark theme */
 html:has(.theme-switcher__input:checked) {
-  --primary-300: hsl(11, 100%, 94%);
-  --primary-400: hsl(11, 100%, 85%);
-  --primary-600: tomato;
-  --primary-700: hsl(7, 76%, 42%);
-
   --white: #222;
   --neutral-100: #404040;
   --neutral-200: #525252;
