@@ -1,0 +1,70 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  top: 0.5rem;
+  left: 0.5rem;
+
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.box--nested {
+  border: 2px solid magenta;
+  background: rgba(255, 0, 255, 0.1);
+}
+
+.box--static {
+  position: static;
+}
+
+.box--relative {
+  position: relative;
+}
+
+.box--absolute {
+  position: absolute;
+}
+
+.box--fixed {
+  position: fixed;
+}
+
+.list {
+  list-style: none;
+  max-width: 400px;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border: 2px solid black;
+}
+
+.list__caption {
+  padding: 0.35rem 0.5rem 0.15rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025rem;
+  border-bottom: 1px solid #ccc;
+  background: #f0f0f0;
+}
+
+.list__caption--sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.list__caption--sub {
+  top: 2rem;
+  background: magenta;
+}
+
+.list__item {
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+}

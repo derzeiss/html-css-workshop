@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position demo</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="section section--first container">
+      <a href="index.html">← <small>Zurück zur Startseite</small></a>
+      <h1>Das <code>position</code> property</h1>
+    </section>
+    <section class="section container">
+      <h2>boxes</h2>
+      <h3>static</h3>
+      <div class="box box--static">static</div>
+      <section>
+        <h3>relative</h3>
+        <div class="box box--relative">relative</div>
+      </section>
+      <!-- <h3>fixed</h3>
+      <div class="box box--fixed">fixed</div> -->
+
+      <h3>static &gt; absolute</h3>
+      <div class="box box--static">
+        static &gt; absolute
+        <div class="box box--absolute box--nested">static &gt; absolute</div>
+      </div>
+      <h3>relative &gt; absolute</h3>
+      <div class="box box--relative">
+        relative &gt; absolute
+        <div class="box box--absolute box--nested">relative &gt; absolute</div>
+      </div>
+    </section>
+    <section class="section container">
+      <h2>list with sticky captions</h2>
+
+      <ul class="list">
+        <li class="list__caption">category 1</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+        <li class="list__caption">category 2</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+        <li class="list__caption">category 3</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+        <li class="list__caption">category 4</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+      </ul>
+
+      <ul class="list">
+        <li class="list__caption list__caption--sticky">category 1</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__caption list__caption--sticky list__caption--sub">
+          subcategory 1
+        </li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+        <li class="list__caption list__caption--sticky">category 2</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+        <li class="list__caption list__caption--sticky">category 3</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+        <li class="list__caption list__caption--sticky">category 4</li>
+        <li class="list__item">item 1</li>
+        <li class="list__item">item 2</li>
+        <li class="list__item">item 3</li>
+        <li class="list__item">item 4</li>
+        <li class="list__item">item 5</li>
+      </ul>
+    </section>
+  </body>
+</html>
