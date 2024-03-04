@@ -15,10 +15,7 @@
         <a href="#gallery">Galerie</a>
         <a href="#contact">Kontakt</a>
         <button class="theme-switcher">
-          <i class="theme-switcher__icon--light far fa-moon"></i>
-          <i
-            class="theme-switcher__icon--dark theme-switcher__icon--hidden far fa-sun"
-          ></i>
+          <i class="theme-switcher__icon far fa-moon"></i>
         </button>
       </nav>
     </header>
@@ -184,20 +181,17 @@
         .addEventListener("click", (ev) => {
           const cls = {
             themeDark: "theme-dark",
-            iconHidden: "theme-switcher__icon--hidden",
-          };
-          const sel = {
-            iconLight: ".theme-switcher__icon--light",
-            iconDark: ".theme-switcher__icon--dark",
+            moon: "fa-moon",
+            sun: "fa-sun",
+            icon: "theme-switcher__icon",
           };
 
           const $html = document.documentElement;
           const $button = ev.currentTarget;
-          const $iconLight = $button.querySelector(sel.iconLight);
-          const $iconDark = $button.querySelector(sel.iconDark);
+          const $icon = $button.querySelector("." + cls.icon);
 
-          $iconLight.classList.toggle(cls.iconHidden);
-          $iconDark.classList.toggle(cls.iconHidden);
+          $icon.classList.toggle(cls.moon);
+          $icon.classList.toggle(cls.sun);
           $html.classList.toggle(cls.themeDark);
         });
     </script>
