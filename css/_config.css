@@ -12,7 +12,7 @@
 }
 
 /* dark theme */
-html:has(.theme-switcher__input:checked) {
+.theme-dark {
   --white: #222;
   --neutral-100: #404040;
   --neutral-200: #525252;

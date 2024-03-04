@@ -1,5 +1,4 @@
-.theme-switcher::before {
-  content: "\f186";
+.theme-switcher {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,22 +8,16 @@
   margin: -1rem -0.5rem;
 
   cursor: pointer;
-
-  font-family: "Font Awesome 6 Free";
-
   border-radius: 100px;
+  color: var(--neutral-900);
 }
 
-.theme-switcher:hover::before {
+.theme-switcher:hover {
   background: var(--neutral-100);
 }
 
-.theme-switcher:active::before {
+.theme-switcher:active {
   background: var(--neutral-200);
-}
-
-.theme-switcher:has(.theme-switcher__input:checked)::before {
-  content: "\f185";
 }
 
 .theme-switcher__input {
@@ -32,4 +25,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.theme-switcher__icon--hidden {
+  display: none;
 }

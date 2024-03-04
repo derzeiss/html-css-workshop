@@ -14,9 +14,12 @@
         <a href="#menu">Menü</a>
         <a href="#gallery">Galerie</a>
         <a href="#contact">Kontakt</a>
-        <label class="theme-switcher">
-          <input type="checkbox" class="theme-switcher__input" />
-        </label>
+        <button class="theme-switcher">
+          <i class="theme-switcher__icon--light far fa-moon"></i>
+          <i
+            class="theme-switcher__icon--dark theme-switcher__icon--hidden far fa-sun"
+          ></i>
+        </button>
       </nav>
     </header>
     <section class="hero">
@@ -174,6 +177,30 @@
         </nav>
       </div>
     </footer>
+
+    <script>
+      document
+        .querySelector(".theme-switcher")
+        .addEventListener("click", (ev) => {
+          const cls = {
+            themeDark: "theme-dark",
+            iconHidden: "theme-switcher__icon--hidden",
+          };
+          const sel = {
+            iconLight: ".theme-switcher__icon--light",
+            iconDark: ".theme-switcher__icon--dark",
+          };
+
+          const $html = document.documentElement;
+          const $button = ev.currentTarget;
+          const $iconLight = $button.querySelector(sel.iconLight);
+          const $iconDark = $button.querySelector(sel.iconDark);
+
+          $iconLight.classList.toggle(cls.iconHidden);
+          $iconDark.classList.toggle(cls.iconHidden);
+          $html.classList.toggle(cls.themeDark);
+        });
+    </script>
   </body>
 </html>
 
