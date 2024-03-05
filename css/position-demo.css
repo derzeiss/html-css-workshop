@@ -62,6 +62,7 @@
 .list__caption--sub {
   top: 2rem;
   background: magenta;
+  z-index: 2;
 }
 
 .list__item {
