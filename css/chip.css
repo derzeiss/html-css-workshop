@@ -6,7 +6,7 @@
 
 .chip {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
   line-height: 1.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;

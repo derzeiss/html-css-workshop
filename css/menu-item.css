@@ -28,7 +28,7 @@
 
   font-weight: 600;
   font-style: italic;
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
   line-height: 150%;
 
   border-radius: 100rem;
@@ -61,6 +61,6 @@
 
 .menu-item__price small {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
   color: var(--neutral-500);
 }

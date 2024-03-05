@@ -46,7 +46,7 @@
 
 .list__caption {
   padding: 0.35rem 0.5rem 0.15rem;
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
   text-transform: uppercase;
   letter-spacing: 0.025rem;
   border-bottom: 1px solid #ccc;

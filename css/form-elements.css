@@ -8,7 +8,7 @@
   margin: 1.5rem 0;
 
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
   letter-spacing: 0.025em;
 }
 
@@ -20,7 +20,7 @@
 
   font: inherit;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: var(--font-base);
 
   border-radius: 8px;
   border: none;
@@ -34,4 +34,8 @@
 .form-field__textbox:focus {
   border-color: var(--primary-600);
   outline: none;
+}
+
+.checkbox {
+  font-size: var(--font-sm);
 }

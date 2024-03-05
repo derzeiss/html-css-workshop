@@ -9,6 +9,10 @@
   --neutral-200: #e5e5e5;
   --neutral-500: #737373;
   --neutral-900: #171717;
+
+  --font-base: 1rem;
+  --font-sm: 0.875rem;
+  --font-xs: 0.75rem;
 }
 
 /* dark theme */

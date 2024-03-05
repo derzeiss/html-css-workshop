@@ -16,7 +16,7 @@
   white-space: nowrap;
 
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
   text-transform: uppercase;
   text-transform: uppercase;
   letter-spacing: 0.05em;

@@ -3,7 +3,7 @@
   color: var(--white);
   background: var(--neutral-900);
 
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
 }
 
 .page-footer__container {
@@ -17,7 +17,7 @@
   display: flex;
   gap: 1rem;
 
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
 }
 
 /* sm */
