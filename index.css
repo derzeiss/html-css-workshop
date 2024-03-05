@@ -8,6 +8,7 @@
 @import "./css/layout.css";
 
 /* components */
+@import "./css/back-to-top.css";
 @import "./css/button.css";
 @import "./css/chip.css";
 @import "./css/decoration.css";
