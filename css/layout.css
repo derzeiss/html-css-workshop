@@ -31,28 +31,3 @@
 
   color: var(--neutral-500);
 }
-
-.back-to-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  bottom: 1rem;
-  left: calc(100vw - 4rem);
-  margin-bottom: 1rem;
-  cursor: pointer;
-  z-index: 10;
-
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100px;
-  background: var(--white);
-}
-
-.back-to-top:hover {
-  background: var(--neutral-100);
-}
-
-.back-to-top:active {
-  background: var(--neutral-200);
-}
