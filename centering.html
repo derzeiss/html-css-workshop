@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Yummi Restaurant</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <style>
+      .wrapper {
+        width: 100%;
+        margin: 2rem 0;
+        aspect-ratio: 16 / 9;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .center-absolute {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.1);
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 8rem;
+        height: 6rem;
+        margin: auto;
+
+        line-height: 2rem;
+      }
+
+      .center-transform {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.1);
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+      }
+
+      .center-flex {
+        background: rgba(0, 0, 0, 0.1);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section section--first container">
+      <div class="wrapper">
+        <div>davor</div>
+        <div class="center-absolute">text<br />Zeile 2</div>
+        <div>danach</div>
+      </div>
+
+      <div class="wrapper">
+        <div>davor</div>
+        <div class="center-transform">text<br />Zeile 2</div>
+        <div>danach</div>
+      </div>
+
+      <div class="wrapper">
+        <div>davor</div>
+        <button class="btn btn--plain btn--primary">click me</button>
+        <input class="textbox" />
+        <div class="center-flex">text<br />Zeile 2</div>
+        <button class="btn btn--plain btn--primary">click me</button>
+        <input class="textbox" />
+        <div>danach</div>
+      </div>
+    </section>
+  </body>
+</html>
