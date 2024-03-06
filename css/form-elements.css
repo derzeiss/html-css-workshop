@@ -6,13 +6,15 @@
 .form-field {
   display: block;
   margin: 1.5rem 0;
+}
 
+.text-label {
   font-weight: 600;
   font-size: var(--font-sm);
   letter-spacing: 0.025em;
 }
 
-.form-field__textbox {
+.textbox {
   display: block;
   width: 100%;
   padding: 1rem 0.75rem;
@@ -31,11 +33,53 @@
   transition-duration: 0.1s;
 }
 
-.form-field__textbox:focus {
+.textbox:focus {
   border-color: var(--primary-600);
   outline: none;
 }
 
 .checkbox {
+  display: block;
+  padding-left: 2.5rem;
+  padding-top: 0.15rem;
   font-size: var(--font-sm);
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox::before,
+.checkbox::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+
+  border-radius: 0.25rem;
+}
+
+.checkbox::before {
+  background: var(--neutral-100);
+}
+
+.checkbox::after {
+  background: var(--primary-600);
+  transform: scale(0);
+  transition: transform 0.1s ease-out;
+}
+.checkbox:has(input:checked)::after {
+  background: var(--primary-600);
+  transform: scale(0.6);
+  transition: transform 0.1s cubic-bezier(0, 0, 0.25, 1.81);
+}
+
+.hidden-input {
+  position: absolute;
+  top: 1rem;
+  left: 0.5rem;
+
+  opacity: 0;
+  pointer-events: none;
 }
