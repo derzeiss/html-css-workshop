@@ -13,6 +13,7 @@
 @import "./css/chip.css";
 @import "./css/decoration.css";
 @import "./css/form-elements.css";
+@import "./css/form-validation.css";
 @import "./css/gallery.css";
 @import "./css/hero.css";
 @import "./css/logo.css";
@@ -23,4 +24,5 @@
 
 /* pages */
 @import "./css/button-demo.css";
+@import "./css/grid-demo.css";
 @import "./css/position-demo.css";
