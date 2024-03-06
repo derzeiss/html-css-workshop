@@ -23,6 +23,7 @@
 
   background: var(--neutral-100);
 
+  transform: scale(1);
   transition-property: background-color, transform;
   transition-duration: 0.1s;
 }
