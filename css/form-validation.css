@@ -1,0 +1,44 @@
+.input-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  z-index: 1;
+
+  font-size: var(--font-xs);
+
+  border-radius: 0.25rem;
+  color: var(--error-600);
+  background: var(--error-200);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.25rem);
+  transition-property: opacity, visibility, transform;
+  transition-duration: 0.1s;
+}
+
+.input-error::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+  border: 0.5rem solid transparent;
+  border-bottom-color: var(--error-200);
+}
+
+.input-error__icon {
+  font-size: 1rem;
+}
+
+input:invalid:focus + .input-error,
+textarea:invalid:focus + .input-error {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

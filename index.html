@@ -63,6 +63,7 @@
             <button class="btn btn--plain btn--tertiary">Mehr Details</button>
           </div>
         </div>
+
         <div class="menu-item">
           <img
             class="menu-item__image"
@@ -89,6 +90,7 @@
             <button class="btn btn--plain btn--tertiary">Mehr Details</button>
           </div>
         </div>
+
         <div class="menu-item" data-featured="3 für 2 Deal">
           <img
             class="menu-item__image"
@@ -137,25 +139,51 @@
     <section id="contact" class="section container with-decoration-letters">
       <form class="form">
         <h2>Sag uns Hallo!</h2>
-        <label class="form-field">
+        <label class="form-field text-label">
           Dein Name
-          <input class="form-field__textbox" placeholder="Max Mustermann" />
+          <input
+            class="textbox"
+            placeholder="Max Mustermann"
+            required
+            novalidate
+          />
+          <div class="input-error">
+            <i class="input-error__icon fa fa-exclamation-circle"></i>
+            Bitte gib deinen Namen ein.
+          </div>
         </label>
-        <label class="form-field">
+        <label class="form-field text-label">
           Deine E-Mail-Adresse
           <input
             type="email"
-            class="form-field__textbox"
+            class="textbox"
             placeholder="max.mustermann@email.de"
+            required
+            novalidate
           />
+          <div class="input-error">
+            <i class="input-error__icon fa fa-exclamation-circle"></i>
+            Bitte gib eine valide E-Mail Adresse ein.
+          </div>
         </label>
-        <label class="form-field">
+        <label class="form-field text-label">
           Dein Nachricht
           <textarea
-            class="form-field__textbox"
+            class="textbox"
             rows="6"
             placeholder="Liebes Yummi-Team, ..."
+            required
+            novalidate
           ></textarea>
+          <div class="input-error">
+            <i class="input-error__icon fa fa-exclamation-circle"></i>
+            Bitte gib eine Nachricht ein.
+          </div>
+        </label>
+        <label class="form-field checkbox">
+          Ich bin damit einverstanden, dass meine Daten zur Beantwortung meiner
+          Anfrage gespeichert werden.
+          <input type="checkbox" class="hidden-input" required />
         </label>
         <button class="btn btn--plain btn--primary">Nachricht absenden</button>
       </form>

@@ -10,6 +10,9 @@
   --neutral-500: #737373;
   --neutral-900: #171717;
 
+  --error-600: hsl(10, 100%, 44%);
+  --error-200: hsl(10, 100%, 93%);
+
   --font-base: 1rem;
   --font-sm: 0.875rem;
   --font-xs: 0.75rem;
